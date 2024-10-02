@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0208)file:///D:/%D0%A4%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B0%20%D1%80%D0%B0%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B9/%D0%97%D0%B0%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B8/zundonza.space-main/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zundonza - Bio</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .glitch {
+            font-size: 3rem;
+            text-align: center;
+            opacity: 0;
+            animation: appear 1s forwards 1s, glitch 2s infinite alternate;
+        }
+
+        /* Плавное появление всех элементов */
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Анимация глитча без резкого окончания */
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px red, -2px -2px blue;
+            }
+            25% {
+                text-shadow: -2px 2px blue, 2px -2px red;
+            }
+            50% {
+                text-shadow: 2px -2px blue, -2px 2px red;
+            }
+            75% {
+                text-shadow: -2px -2px red, 2px 2px blue;
+            }
+            100% {
+                text-shadow: 2px 2px blue, -2px -2px red;
+            }
+        }
+
+        .bio {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: appear 1s forwards 1s;
+        }
+
+        .typing {
+            border-right: 2px solid;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 1.5s steps(30, end) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #00FF00;
+            }
+        }
+
+        .neon-border {
+            position: relative;
+            border: 2px solid #00FF00;
+            padding: 10px;
+            margin: 20px;
+            display: inline-block;
+            transform: translateX(20px); /* Смещение правее */
+        }
+
+        .neon-border:before, .neon-border:after {
+            content: '';
+            position: absolute;
+            border: 2px solid #00FF00;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            animation: neon 1.5s infinite alternate;
+        }
+
+        @keyframes neon {
+            from {
+                opacity: 0.5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0;
+            animation: appear 1s forwards 1s;
+        }
+
+        .links a {
+            color: #00FF00;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glitch">LGD_PHANTOM888</div>
+
+    <div class="bio">
+        <div class="neon-border">
+            <div class="typing">Discord Administrator</div>
+        </div>
+        <div class="neon-border">
+            <div class="typing">Languages: C++, C#, Python, Java, Java Script</div>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="https://discord.com/users/1031896833947095081" target="_blank">Discord</a>
+        <a href="https://github.com/LGD-PHANTOM888" target="_blank">GitHub</a>
+    </div>
+
+
+
+
+</body></html>
